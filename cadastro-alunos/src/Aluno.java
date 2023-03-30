@@ -1,14 +1,37 @@
 
-
-public class Aluno extends Pessoa{
+public class Aluno extends Pessoa {
 	
-	private String ra;
-	private int serie;
-	//private Disciplina disciplinas[];
-	
-	public Aluno() {
-		
-	}
-	
+    String ra;
+    int serie;
+    Disciplina disc[];
+ 
+    Aluno(String nome, int idade, String ra, int serie, Disciplina disc[]){
+        super (nome, idade);
+        setRa(ra);
+        setSerie(serie);
+        setDisc(disc);
+    }
+    
+    private void setRa(String ra){
+        this.ra = ra;
+    }
+    
+    private void setSerie(int serie){
+        this.serie = serie;
+    }
+    
+    private void setDisc(Disciplina disc[]){
+        this.disc = disc;
+    }
+    
+    public static void menu(String opcao) {
+    	
+    	switch(opcao) {
+    		case "I":
+    			System.out.println("Inserindo..."); //**********************
+    			break;
+    		
+    	}
+    }
 }
-	
+
